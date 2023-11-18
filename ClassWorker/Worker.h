@@ -26,8 +26,11 @@ public:
             strcpy_s(this->position, strlen(position) + 1, position);
         }
     }
+    ~Worker() {}
+
 
     explicit Worker() : Worker(nullptr, nullptr, startYear, 0) {};
+
 
     const char* getFullName() const
     {
