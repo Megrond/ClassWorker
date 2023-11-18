@@ -60,11 +60,6 @@ int main()
     cout << "Работники с должностью " << position << ":" << endl;
     workers->showWorker(positionWorkers, positionWorkersCount); 
 
-    for (int i{ 0 }; i < 4; i++)
-    {
-        cout << "Должность - " << workers[i].getPosition() << " - " << workers[i].getSalary() << endl;
-    }
-
     return 0;
 }
 
