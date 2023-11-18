@@ -6,7 +6,7 @@ using namespace std;
 
 void Worker::showWorker(const Worker* workers, int count) const
 {
-    for (int i = 0; i < count; i++)
+    for (int i{ 0 }; i < count; i++)
     {
         cout << "ФИО: " << workers[i].getFullName();
         cout << ", Должность: " << workers[i].getPosition();
