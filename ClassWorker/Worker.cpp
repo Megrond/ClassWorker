@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <Windows.h>
 #include "Worker.h"
 
@@ -8,10 +8,10 @@ void Worker::showWorker(const Worker* workers, int count) const
 {
     for (int i = 0; i < count; i++)
     {
-        cout << "ÔÈÎ: " << workers[i].getFullName();
-        cout << ", Äîëæíîñòü: " << workers[i].getPosition();
-        cout << ", Ãîä ïîñòóïëåíèÿ: " << workers[i].getStartYear();
-        cout << ", Çàðïëàòà: " << workers[i].getSalary() << endl;
+        cout << "Ð¤Ð˜Ðž: " << workers[i].getFullName();
+        cout << ", Ð”Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ: " << workers[i].getPosition();
+        cout << ", Ð“Ð¾Ð´ Ð¿Ð¾ÑÑ‚ÑƒÐ¿Ð»ÐµÐ½Ð¸Ñ: " << workers[i].getStartYear();
+        cout << ", Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð°: " << workers[i].getSalary() << endl;
     }
     cout << endl;
 };

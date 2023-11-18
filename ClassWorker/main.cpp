@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <Windows.h>
 #include "Worker.h"
 
@@ -10,10 +10,10 @@ int main()
 
     Worker workers[4]
     {
-        Worker("Иванов Иван Иванович", "Менеджер", 2010, 50000),
-        Worker("Петров Петр Петрович", "Инженер", 2008, 60000),
-        Worker("Сидоров Сидор Сидорович", "Рабочий", 2015, 40000),
-        Worker("Алексеев Алексей Алексеевич", "Программист", 2012, 70000)
+        Worker("Р РѕРјР°С€РѕРІ Р’РёРєС‚РѕСЂ Р’РёРєС‚РѕСЂРѕРІРёС‡", "РњРµРЅРµРґР¶РµСЂ", 2010, 50000),
+        Worker("РњР°Р»С‹РіРёРЅ РђРЅРґСЂРµР№ Р’Р°Р»РµСЂСЊРµРІРёС‡", "РРЅР¶РµРЅРµСЂ", 2008, 60000),
+        Worker("РџРµС‚СЂРѕРІ РРІР°РЅ РњРёС…Р°Р№Р»РѕРІРёС‡", "Р Р°Р±РѕС‡РёР№", 2015, 40000),
+        Worker("РћРґРµРіРѕРІ РђРЅРґСЂРµР№ РќРёРєРѕР»Р°РµРІРёС‡", "РџСЂРѕРіСЂР°РјРјРёСЃС‚", 2012, 70000)
     };
     workers->showWorker(workers, 4);
 
@@ -28,7 +28,7 @@ int main()
             Workers[workersCount++] = workers[i];
         }
     }
-    cout << "Работники со стажем более " << howYears << " лет:" << endl;
+    cout << "Р Р°Р±РѕС‚РЅРёРєРё СЃРѕ СЃС‚Р°Р¶РµРј Р±РѕР»РµРµ " << howYears << " Р»РµС‚:" << endl;
     workers->showWorker(Workers, workersCount);
 
 
@@ -43,11 +43,11 @@ int main()
             salaryWorkers[salaryWorkersCount++] = workers[i];
         }
     }
-    cout << "Работники с зарплатой выше " << salaryFull <<": " << endl;
+    cout << "Р Р°Р±РѕС‚РЅРёРєРё СЃ Р·Р°СЂРїР»Р°С‚РѕР№ РІС‹С€Рµ " << salaryFull <<": " << endl;
     workers->showWorker(salaryWorkers, salaryWorkersCount);
 
 
-    const char* position = "Менеджер";
+    const char* position = "РњРµРЅРµРґР¶РµСЂ";
     Worker positionWorkers[4]; 
     int positionWorkersCount = 0;
     for (int i = 0; i < 4; i++) 
@@ -57,7 +57,7 @@ int main()
             positionWorkers[positionWorkersCount++] = workers[i];
         }
     }
-    cout << "Работники с должностью " << position << ":" << endl;
+    cout << "Р Р°Р±РѕС‚РЅРёРєРё СЃ РґРѕР»Р¶РЅРѕСЃС‚СЊСЋ " << position << ":" << endl;
     workers->showWorker(positionWorkers, positionWorkersCount); 
 
     return 0;
