@@ -19,11 +19,11 @@ int main()
 
 
     uint32_t howYears = 10;
-    Worker Workers[4]; 
+    Worker Workers[4];
     uint32_t workersCount{ 0 };
     for (uint32_t i{ 0 }; i < 4; i++)
     {
-        if (workers[i].getStartYear() <= 2023 - howYears) 
+        if (workers[i].getStartYear() <= 2023 - howYears)
         {
             Workers[workersCount++] = workers[i];
         }
@@ -32,11 +32,11 @@ int main()
     workers->showWorker(Workers, workersCount);
 
 
-    uint32_t salaryFull = 55000; 
-    Worker salaryWorkers[4]; 
-    uint32_t salaryWorkersCount = 0;
+    uint32_t salaryFull = 55000;
+    Worker salaryWorkers[4];
+    uint32_t salaryWorkersCount{ 0 };
 
-    for (uint32_t i = 0; i < 4; i++)
+    for (uint32_t i{0}; i < 4; i++)
     {
         if (workers[i].getSalary() > salaryFull)
         {
@@ -50,7 +50,7 @@ int main()
     const char* position = "Менеджер";
     Worker positionWorkers[4]; 
     int positionWorkersCount = 0;
-    for (int i = 0; i < 4; i++) 
+    for (int i{ 0 }; i < 4; i++)
     {
         if (strcmp(workers[i].getPosition(), position) == 0)
         {
@@ -59,6 +59,11 @@ int main()
     }
     cout << "Работники с должностью " << position << ":" << endl;
     workers->showWorker(positionWorkers, positionWorkersCount); 
+
+    for (int i{ 0 }; i < 4; i++)
+    {
+        cout << "Должность - " << workers[i].getPosition() << " - " << workers[i].getSalary() << endl;
+    }
 
     return 0;
 }
